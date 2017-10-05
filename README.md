@@ -1,5 +1,9 @@
 # qq-music-desktop
 
+## package.json安装
+`
+$ npm init -y
+`
 ## Electron 安装
 ### 1.全局安装
 `
