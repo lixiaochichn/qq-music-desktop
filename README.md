@@ -1,5 +1,15 @@
 # qq-music-desktop
 
+## Electron 安装
+###1.全局安装
+`
+$ sudo ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install electron -g --verbose
+`
+###2.文件夹安装
+`
+$ ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install electron --save
+`
+
 ## Build Setup
 
 ``` bash
