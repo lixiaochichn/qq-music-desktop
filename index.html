@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>QQ 音乐</title>
+    <title>QQ 音乐桌面版</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.4/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.js"></script>
 </head>
+
 <body>
-    <h1>QQ 音乐</h1>
+    <div id="app">
+        <h1>QQ 音乐</h1>
+        <router-link to="/recommend">推荐</router-link>
+        <router-link to="/rank">排行</router-link>
+        <router-link to="/toplist">歌单</router-link>
+        <router-link to="/radio">电台</router-link>
+        <router-link to="/mv">MV</router-link>
+
+        <main><router-view></router-view></main>
+    </div>
+
+    <script>
+        const Recommend = { template: '<div>推荐</div>'}
+        const Rank = { template: '<div>排行</div>'}
+        const Toplist = { template: '<div>歌单</div>'}
+        const Radio = { template: '<div>电台</div>'}
+        const MV = { template: '<div>MV</div>'}
+
+        const routes = [
+            { path: '/recommend', component: Recommend },
+            { path: '/rank', component: Rank },
+            { path: '/toplist', component: Toplist },
+            { path: '/radio', component: Radio },
+            { path: '/mv', component: MV }
+        ]
+
+        const router = new VueRouter({
+            routes // （缩写）相当于 routes: routes
+        })
+
+        const app = new Vue({
+            router
+        }).$mount('#app')
+    </script>
+
+    <script src="./renderer.js"></script>
+
 </body>
+
 </html>

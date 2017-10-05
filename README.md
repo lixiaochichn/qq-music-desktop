@@ -1,5 +1,8 @@
 # qq-music-desktop
-
+`
+?$ npm install request --save
+?$ npm install request-promise --save
+`
 ## package.json安装
 `
 $ npm init -y

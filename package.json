@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/lixiaochichn/qq-music-desktop#readme",
   "dependencies": {
-    "electron": "^1.7.8"
+    "electron": "^1.7.8",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   }
 }
