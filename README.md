@@ -11,7 +11,7 @@ $ sudo ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install elec
 `
 ### 2.文件夹安装
 `
-$ ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install electron --save
+$ ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/ npm install electron --save --verbose
 `
 
 ## Build Setup
